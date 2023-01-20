@@ -12,7 +12,7 @@ new Chart(placeGraph, {
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [{
-      label: '# of Votes',
+      label: 'N° of Crimes in millions',
       data: [12, 19, 3, 5, 2, 3],
       borderWidth: 1
     }]
