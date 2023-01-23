@@ -38,7 +38,7 @@ import  Chart  from 'chart.js/auto';
     new Chart(
       document.getElementById('chart1'),
       {
-        type: 'line',
+        type: 'bar',
         data: {
           labels: years,
           datasets: datasets
@@ -75,7 +75,6 @@ import  Chart  from 'chart.js/auto';
       }
     ] 
     
-    //insert the data in chart.js template
     new Chart(
       document.getElementById('chart2'),
       {
@@ -94,10 +93,7 @@ import  Chart  from 'chart.js/auto';
     canvas.id = 'remoteData'
     const mw = document.getElementById('mw-content-text')
     bodyContent.insertBefore(canvas,mw)
-    
-    //fetch data with axios:
-    
-    
+
     let myChart
     const datapoints =[]
     
@@ -108,7 +104,7 @@ import  Chart  from 'chart.js/auto';
          myChart = new Chart(
           document.getElementById('remoteData'),
           {
-            type: 'line',
+            type: 'bar',
             data: {
               labels: datapoints.map(ele => ele.x),
               datasets: [
@@ -138,7 +134,7 @@ import  Chart  from 'chart.js/auto';
           myChart=new Chart(
             document.getElementById('remoteData'),
             {
-              type: 'line',
+              type: 'bar',
               data: {
                 labels: datapoints.map(ele => ele.x),
                 datasets: [
